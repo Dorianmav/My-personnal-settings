@@ -1,0 +1,117 @@
+[user]
+	name = Dorian MAVOUNGOUD
+	email = dorianmav@outlook.com
+
+# jsp si je garde ca (ai pas bien compris)
+[diff "astextplain"] 
+	textconv = astextplain
+
+[filter "lfs"] 
+	clean = git-lfs clean -- %f 
+	smudge = git-lfs smudge -- %f 
+	process = git-lfs filter-process 
+	required = true
+
+[http] 
+    sslBackend = schannel
+
+[core] 
+    autocrlf = true 
+    fscache = true 
+    symlinks = false
+    # si sublime texte n'est pas installé? 
+    editor = "C:\\Program Files\\Sublime Text\\subl.exe" -w 
+    excludesfile = ~/.gitignore_global
+
+[pull] 
+    rebase = true 
+
+[credential] 
+    helper = manager 
+
+[credential "https://dev.azure.com"] 
+    useHttpPath = true
+
+[init] 
+    defaultBranch = main
+
+[alias] 
+    # Liste tous les alias 
+    aliases = ! git config -l | grep alias | cut -c 7- 
+
+    # Historique graphique coloré 
+    tree = log --pretty=format:'%C(Yellow)%h%Creset -%C(auto)%d%C(reset) %s%x09 %C(magenta blink bold)<%an>%Creset %C(blue)(%cr)%Creset %C(blue dim)%ad%Creset' --graph --all 
+
+    # Checkout et pull en une commande 
+    get = "!sh -c 'git checkout $0 && git pull'" 
+
+    # Add, amend et force push 
+    ca = ! git add . && git commit --amend -C HEAD && git push -f 
+
+    # Supprimer un tag local et distant 
+    tej = "!f() { echo '⚠️ Suppression du tag $1 (local + remote). Confirmer ? [y/N]'; read ans; if [ \"$ans\" = \"y\" ]; then git tag -d \"$1\" && git push --delete origin \"$1\"; else echo 'Annulé.'; fi; }; f" 
+
+    # Supprimer une branche locale et distante 
+    wipe = "!f() { echo '⚠️ Suppression de la branche $1 (local + remote). Confirmer ? [y/N]'; read ans; if [ \"$ans\" = \"y\" ]; then git branch -D \"$1\" && git push --delete origin \"$1\"; else echo 'Annulé.'; fi; }; f"
+
+    # Alias utiles supplémentaires 
+    st = status 
+    co = checkout 
+    br = branch 
+    ci = commit 
+    unstage = reset HEAD -- 
+    last = log -1 HEAD 
+    visual = !gitk 
+
+    # Logs avancés 
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit 
+    lga = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+
+[branch] 
+    autosetuprebase = always
+
+[push] 
+    autoSetupRemote = true 
+    default = current   
+
+[merge] 
+    tool = vscode 
+
+[mergetool "vscode"] 
+    cmd = code --wait $MERGED 
+    
+[diff] 
+    tool = vscode 
+    
+[difftool "vscode"] 
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[fetch]
+    prune = true
+
+[rebase]
+    autoStash = true
+
+[rerere]
+    enabled = true
+
+[pull]
+    ff = only
+
+[core]
+    safecrlf = warn
+
+[commit]
+    gpgsign = true
+
+[user]
+    signingkey = TON_CLEF_GPG
+
+[color]
+    ui = auto
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta

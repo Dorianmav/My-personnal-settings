@@ -1,0 +1,55 @@
+# Extensions VS Code essentielles
+
+# Formatage et linting
+esbenp.prettier-vscode
+dbaeumer.vscode-eslint
+bradlc.vscode-tailwindcss
+
+# TypeScript et JavaScript
+ms-vscode.vscode-typescript-next
+christian-kohler.path-intellisense
+christian-kohler.npm-intellisense
+formulahendry.auto-rename-tag
+formulahendry.auto-close-tag
+
+# Git et versioning
+eamodio.gitlens
+mhutchie.git-graph
+donjayamanne.githistory
+
+# Thèmes et icônes
+pkief.material-icon-theme
+zhuangtongfa.material-theme
+GitHub.github-vscode-theme
+monokai.theme-monokai-pro-vscode
+
+# Développement web
+ritwickdey.liveserver
+ms-vscode.live-server
+bradlc.vscode-tailwindcss
+zignd.html-css-class-completion
+
+# Productivité
+alefragnani.bookmarks
+streetsidesoftware.code-spell-checker
+usernamehw.errorlens
+oderwat.indent-rainbow
+ms-vsliveshare.vsliveshare
+
+# Markdown
+yzhang.markdown-all-in-one
+shd101wyy.markdown-preview-enhanced
+
+# Docker et containers
+ms-azuretools.vscode-docker
+ms-vscode-remote.remote-containers
+
+# REST API
+humao.rest-client
+
+# Divers utiles
+ms-vscode.hexeditor
+mechatroner.rainbow-csv
+ms-python.python
+ms-vscode.powershell
+redhat.vscode-yaml

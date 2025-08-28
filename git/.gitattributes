@@ -1,0 +1,126 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code files - Force LF endings
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.sass text eol=lf
+*.less text eol=lf
+
+# Configuration files
+*.config text eol=lf
+*.conf text eol=lf
+*.ini text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+*.rc text eol=lf
+
+# Documentation
+*.txt text eol=lf
+*.rst text eol=lf
+README* text eol=lf
+CHANGELOG* text eol=lf
+LICENSE* text eol=lf
+
+# Scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Windows specific files - Force CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files - Don't modify
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.bmp binary
+*.tiff binary
+*.webp binary
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.otf binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.rar binary
+
+# Executables
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.app binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+
+# Audio/Video
+*.mp3 binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.wav binary
+*.flac binary
+
+# Database
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+
+# IDE files
+*.suo binary
+*.ntvs binary
+*.njsproj binary
+*.sln binary
+*.sw? binary
+
+# Node.js
+package-lock.json text eol=lf
+yarn.lock text eol=lf
+
+# Language specific handling
+*.sql text
+*.py text
+*.php text
+*.rb text
+*.go text
+*.java text
+*.c text
+*.cpp text
+*.h text
+*.hpp text
+
+# Diff settings for specific files
+*.generated.* -diff
+*.min.js -diff
+*.min.css -diff

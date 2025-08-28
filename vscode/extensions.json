@@ -1,0 +1,52 @@
+{
+    // Extensions recommandées pour ce projet
+    "recommendations": [
+      // --- Indispensables : qualité de code ---
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "redhat.vscode-yaml",
+  
+      // --- Indispensables : écosystème JS/TS ---
+      "ms-vscode.vscode-typescript-next",
+      "christian-kohler.path-intellisense",
+      "christian-kohler.npm-intellisense",
+      "formulahendry.auto-rename-tag",
+      "formulahendry.auto-close-tag",
+  
+      // --- Web / Front : productivité ---
+      "bradlc.vscode-tailwindcss",
+      "zignd.html-css-class-completion",
+      "ritwickdey.liveserver",
+  
+      // --- Git & versioning ---
+      "eamodio.gitlens",
+      "mhutchie.git-graph",
+      "donjayamanne.githistory",
+  
+      // --- API / Containers / Dev infra ---
+      "humao.rest-client",
+      "ms-azuretools.vscode-docker",
+      "ms-vscode-remote.remote-containers",
+  
+      // --- Optionnelles : confort & collaboration ---
+      "alefragnani.bookmarks",
+      "streetsidesoftware.code-spell-checker",
+      "usernamehw.errorlens",
+      "oderwat.indent-rainbow",
+      "ms-vsliveshare.vsliveshare",
+  
+      // --- Optionnelles : formats & utilitaires ---
+      "yzhang.markdown-all-in-one",
+      "shd101wyy.markdown-preview-enhanced",
+      "ms-vscode.hexeditor",
+      "mechatroner.rainbow-csv",
+      "ms-python.python",
+      "ms-vscode.powershell"
+    ],
+  
+    // Extensions à ne pas recommander (si besoin)
+    "unwantedRecommendations": [
+      // Exemple : "publisher.extension-id"
+    ]
+  }
+  
