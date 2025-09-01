@@ -1,9 +1,14 @@
 # Extensions VS Code essentielles
 
-# Formatage et linting
+# Formatage et linting (OBLIGATOIRES pour le formatage automatique)
 esbenp.prettier-vscode
 dbaeumer.vscode-eslint
 bradlc.vscode-tailwindcss
+
+# TypeScript et JavaScript
+ms-vscode.vscode-typescript-next
+christian-kohler.path-intellisense
+christian-kohler.npm-intellisense
 
 # TypeScript et JavaScript
 ms-vscode.vscode-typescript-next
